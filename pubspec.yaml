@@ -16,7 +16,7 @@ dependencies:
 
   # Namecoin transaction codec
   namecoin:
-    path: ../dart-namecoin
+    path: package/dart-namecoin
 
   # Nostr protocol (keys, events, NIP-17/44/59, relays)
   nostr:

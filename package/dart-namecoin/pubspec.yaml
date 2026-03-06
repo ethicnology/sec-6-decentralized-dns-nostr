@@ -1,0 +1,38 @@
+name: namecoin
+description: Dart library to interact with namecoin key/value
+version: 2.0.1
+# repository: https://github.com/my_org/my_repo
+
+environment:
+  sdk: ^3.6.0
+
+# Add regular dependencies here.
+dependencies:
+    # needed for
+    # sha256hash
+    # OP_CODES
+    coinlib:
+      git:
+        url: https://www.github.com/julian-CStack/coinlib
+        ref: f90600053a4f149a6153f30057ac7f75c21ab962
+        path: coinlib
+    # needed for 
+    # HMAC-RIPEMD160
+    # pointycastle is a dep of coinlib, it doesn't add a new dep
+    pointycastle: ^4.0.0
+
+dev_dependencies:
+  lints: ^5.0.0
+  test: ^1.24.0
+  # needed for
+  # examples
+  electrum_adapter:
+    git:
+      url: https://github.com/cypherstack/electrum_adapter
+      ref: 0de864a35c71fce3a07e6a53b623619b32394b8d
+  args: ^2.6.0
+  crypto: ^3.0.2
+  bip39:
+    git:
+      url: https://github.com/cypherstack/stack-bip39.git
+      ref: 20bc8ca0bf0a30c6965977a26c41475a9e862020
